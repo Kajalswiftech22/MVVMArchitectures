@@ -22,6 +22,8 @@
 		EC8C99A32AC004EA0095A8D7 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC8C99A12AC004EA0095A8D7 /* ProductCell.xib */; };
 		EC8C99A62AC0207F0095A8D7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EC8C99A52AC0207F0095A8D7 /* Kingfisher */; };
 		EC8C99A82AC020BB0095A8D7 /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C99A72AC020BB0095A8D7 /* UIImageView + Extension.swift */; };
+		EC8C99AC2AC02C240095A8D7 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C99AB2AC02C240095A8D7 /* EndPointType.swift */; };
+		EC8C99AE2AC035A10095A8D7 /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C99AD2AC035A10095A8D7 /* AddProductViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		EC8C99A02AC004EA0095A8D7 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		EC8C99A12AC004EA0095A8D7 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		EC8C99A72AC020BB0095A8D7 /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
+		EC8C99AB2AC02C240095A8D7 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		EC8C99AD2AC035A10095A8D7 /* AddProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 				EC8C998B2ABFEE120095A8D7 /* Application */,
 				EC8C998F2ABFEE5F0095A8D7 /* Constant */,
 				EC8C998E2ABFEE510095A8D7 /* Extensions */,
+				EC8C99AA2AC02C070095A8D7 /* Utility */,
 				EC8C99902ABFEE670095A8D7 /* Helper */,
 				EC8C99912ABFEE710095A8D7 /* Screens */,
 				EC8C998D2ABFEE3E0095A8D7 /* Storyboard */,
@@ -166,9 +171,9 @@
 		EC8C99942ABFEEA50095A8D7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				EC8C99982ABFEF560095A8D7 /* ProductListViewController.swift */,
 				EC8C99A02AC004EA0095A8D7 /* ProductCell.swift */,
 				EC8C99A12AC004EA0095A8D7 /* ProductCell.xib */,
+				EC8C99A92AC029700095A8D7 /* Controller */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,6 +184,23 @@
 				EC8C99962ABFEF310095A8D7 /* Product.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EC8C99A92AC029700095A8D7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC8C99982ABFEF560095A8D7 /* ProductListViewController.swift */,
+				EC8C99AD2AC035A10095A8D7 /* AddProductViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC8C99AA2AC02C070095A8D7 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				EC8C99AB2AC02C240095A8D7 /* EndPointType.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +283,11 @@
 			files = (
 				EC8C999D2ABFF8120095A8D7 /* Constant.swift in Sources */,
 				EC8C999B2ABFEFF30095A8D7 /* APIManager.swift in Sources */,
+				EC8C99AE2AC035A10095A8D7 /* AddProductViewController.swift in Sources */,
 				EC8C99752ABFEE070095A8D7 /* AppDelegate.swift in Sources */,
 				EC8C99972ABFEF310095A8D7 /* Product.swift in Sources */,
 				EC8C99A82AC020BB0095A8D7 /* UIImageView + Extension.swift in Sources */,
+				EC8C99AC2AC02C240095A8D7 /* EndPointType.swift in Sources */,
 				EC8C99992ABFEF560095A8D7 /* ProductListViewController.swift in Sources */,
 				EC8C997F2ABFEE070095A8D7 /* MVVMArchitectures.xcdatamodeld in Sources */,
 				EC8C99A22AC004EA0095A8D7 /* ProductCell.swift in Sources */,

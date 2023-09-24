@@ -14,20 +14,18 @@ class ProductListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-  
-        configuration()
+ 
+        productTableView.register(UINib(nibName: "ProductCell", bundle: nil), forCellReuseIdentifier: "ProductCell")
+        productTableView.delegate = self
+        productTableView.dataSource = self
+        
+        initViewModel()
+        observeEvent()
     }
 }
 
 extension ProductListViewController {
-    func configuration() {
-        productTableView.register(UINib(nibName: "ProductCell", bundle: nil), forCellReuseIdentifier: "ProductCell")
-        productTableView.delegate = self
-        productTableView.dataSource = self
-        initViewModel()
-        observeEvent()
-    }
-    
+
     func initViewModel() {
         viewModel.fetchProducts()
     }

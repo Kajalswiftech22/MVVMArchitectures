@@ -25,6 +25,11 @@ class ProductCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        productBgView.layer.cornerRadius = 16
+        productBgView.clipsToBounds = false
+        productBgView.backgroundColor = .systemGray6
+        productImageView.layer.cornerRadius = 10
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
