@@ -27,7 +27,7 @@ final class APIManager {
     static let shared = APIManager()  //Static keyword means class ko object create nagari you can used                                      shared properties
     private init() {}
     
-    func request<T: Decodable> (
+    func request<T: Codable> (
     modelType: T.Type,
     type: EndPointType,
     completion: @escaping Handler<T>
@@ -37,7 +37,16 @@ final class APIManager {
             return
         }
         
-        URLSession.shared.dataTask(with: url) { data, response, error in
+        var request = URLRequest(url: url)
+        request.httpMethod = type.method.rawValue
+        
+        if let parameters = type.body {
+            request.httpBody = try? JSONEncoder().encode(parameters)
+        }
+        
+        request.allHTTPHeaderFields = type.headers
+        
+        URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data, error == nil else {
                 completion(.failure(.invalidData))
                 return
@@ -60,6 +69,11 @@ final class APIManager {
         }.resume()
     }
     
+    static var commonHeaders: [String: String] {
+        return [
+            "Content-Type": "application/json"
+        ]
+    }
     /*
     func fetchProducts(completion: @escaping Handler) {
         guard let url = URL(string: Constant.API.productURL) else {

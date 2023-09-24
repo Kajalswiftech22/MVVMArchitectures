@@ -24,6 +24,8 @@
 		EC8C99A82AC020BB0095A8D7 /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C99A72AC020BB0095A8D7 /* UIImageView + Extension.swift */; };
 		EC8C99AC2AC02C240095A8D7 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C99AB2AC02C240095A8D7 /* EndPointType.swift */; };
 		EC8C99AE2AC035A10095A8D7 /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C99AD2AC035A10095A8D7 /* AddProductViewController.swift */; };
+		EC8C99B02AC04C4F0095A8D7 /* AddProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C99AF2AC04C4F0095A8D7 /* AddProduct.swift */; };
+		EC8C99B22AC04D8B0095A8D7 /* ProductEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C99B12AC04D8B0095A8D7 /* ProductEndPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		EC8C99A72AC020BB0095A8D7 /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
 		EC8C99AB2AC02C240095A8D7 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
 		EC8C99AD2AC035A10095A8D7 /* AddProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
+		EC8C99AF2AC04C4F0095A8D7 /* AddProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProduct.swift; sourceTree = "<group>"; };
+		EC8C99B12AC04D8B0095A8D7 /* ProductEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEndPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				EC8C99962ABFEF310095A8D7 /* Product.swift */,
+				EC8C99AF2AC04C4F0095A8D7 /* AddProduct.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				EC8C99AB2AC02C240095A8D7 /* EndPointType.swift */,
+				EC8C99B12AC04D8B0095A8D7 /* ProductEndPoint.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -283,6 +289,7 @@
 			files = (
 				EC8C999D2ABFF8120095A8D7 /* Constant.swift in Sources */,
 				EC8C999B2ABFEFF30095A8D7 /* APIManager.swift in Sources */,
+				EC8C99B22AC04D8B0095A8D7 /* ProductEndPoint.swift in Sources */,
 				EC8C99AE2AC035A10095A8D7 /* AddProductViewController.swift in Sources */,
 				EC8C99752ABFEE070095A8D7 /* AppDelegate.swift in Sources */,
 				EC8C99972ABFEF310095A8D7 /* Product.swift in Sources */,
@@ -290,6 +297,7 @@
 				EC8C99AC2AC02C240095A8D7 /* EndPointType.swift in Sources */,
 				EC8C99992ABFEF560095A8D7 /* ProductListViewController.swift in Sources */,
 				EC8C997F2ABFEE070095A8D7 /* MVVMArchitectures.xcdatamodeld in Sources */,
+				EC8C99B02AC04C4F0095A8D7 /* AddProduct.swift in Sources */,
 				EC8C99A22AC004EA0095A8D7 /* ProductCell.swift in Sources */,
 				EC8C999F2ABFFB6A0095A8D7 /* ProductViewModel.swift in Sources */,
 				EC8C99772ABFEE070095A8D7 /* SceneDelegate.swift in Sources */,

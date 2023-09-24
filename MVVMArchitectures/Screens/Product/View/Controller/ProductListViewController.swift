@@ -22,6 +22,11 @@ class ProductListViewController: UIViewController {
         initViewModel()
         observeEvent()
     }
+    
+    @IBAction func addProductBtnTapped(_ sender: UIBarButtonItem) {
+        let product = AddProduct(title: "iPhone")
+        viewModel.addProduct(parameters: product)
+    }
 }
 
 extension ProductListViewController {
@@ -48,6 +53,8 @@ extension ProductListViewController {
                 }
             case .error(let error):
                 print(error)
+            case .newProductAdded(let newProduct):
+                print(newProduct)
             }
         }
     }
